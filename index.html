@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perizinan Andalalin</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Pengajuan Perizinan Andalalin</h1>
+    
+    <!-- Form Pengajuan -->
+    <div id="pengajuan-form">
+        <h2>Ajukan Permohonan</h2>
+        <input type="text" id="nama" placeholder="Nama Pemohon" required>
+        <input type="text" id="lokasi" placeholder="Lokasi Proyek" required>
+        <input type="file" id="dokumen" required>
+        <button onclick="submitForm()">Ajukan</button>
+    </div>
+    
+    <!-- Status Pengajuan -->
+    <div id="status-pengajuan">
+        <h2>Status Pengajuan</h2>
+        <p id="status-info">Menunggu...</p>
+    </div>
+
+    <!-- Login -->
+    <div id="login-form">
+        <h2>Login</h2>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <script src="firebase-config.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
